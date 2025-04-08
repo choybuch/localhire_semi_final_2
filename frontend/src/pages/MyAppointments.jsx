@@ -92,7 +92,7 @@ const MyAppointments = () => {
                         <p className='mt-1'>
                             <span className='text-sm text-[#3C3C3C] font-medium'>Date & Time:</span> {slotDateFormat(item.slotDate)} | {item.slotTime}
                         </p>
-                        {item.completed && (
+                        {item.isCompleted && (
                             <p className="text-green-500 text-sm font-semibold">✔ Completed</p>
                         )}
                         {/* Show rating component only if the appointment is completed */}
